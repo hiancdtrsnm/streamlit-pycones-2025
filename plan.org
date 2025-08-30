@@ -1,0 +1,75 @@
+#+title:      Charla Hian PyconES 25
+#+date:       [2025-08-28 Thu 09:51]
+#+filetags:   :notebook:
+#+identifier: 20250828T095148
+
+* Diapositivas
+
+** Datos de contacto
+
+** Hola mundo
+
+** Gancho inicial o tensión emocional , Promise : No podíamos enseñar HTML, CSS o JavaScript a nuestros compañeros.
+
+Enseñar una super formula. Cometer problemas.
+
+** Diferentes soluciones con sus pros y contras
+
+- Excel
+- Consola
+- Notebook
+- Frontend + backend
+
+** Revelación: Streamlit.
+
+Logo de Streamlit. Ventajas y promesa de mapas, camara access, chat, formularios, dataframe exploration, interacción con API, login?, CICD.
+
+** Cómo funciona o cómo usar Streamlit.
+
+Fragmento de código a un lado, resultado al otro. Mostramos el potencial: Hola mundo, recuperamos primera segunda diapositiva
+
+** Ejemplos de uso: código duro
+
+Mirar lista de features y hacer un contra ejemplos.
+- routing + query params
+- dataframe exploration
+- dataframe editon
+- camara + drawing
+- cache (connection + data)
+- Hot reload
+- Plotting
+- Forms
+- Maps + interactivo
+- login?
+- Grado de personalizacion?
+  
+
+*** Calcular un precio con IVA
+*** Un formulario que guarda la información en una base de datos
+*** Mostrando datos de una API externa: Pokemon?
+*** Mostrando datos de un CSV
+*** CRUD básico con una base de datos SQLite
+*** Un dashboard con gráficos
+*** Chatbot básico
+*** ComputerVision: ¿Esto es un gato?
+*** Portafolio personal
+
+** Warning> donde no usarlo?
+
+- Personalizaciones
+
+** Como Streamlit ha cambiado nuestra forma de trabajar.
+
+Tal vez ahora si podemos hablar de sus beneficios.
+
+** Llamada a la acción o invitar a soñar con un reto, invitación a probar Streamlit.
+
+Hablamos del cloud, damos algunos consejos finales.
+Projectos relacionados como streamlit on web
+
+** FAQ
+
+Listado de preguntas que se pueden hacer los asistentes. Respondemos en vivo.
+Comunity website
+
+** Datos de contacto
