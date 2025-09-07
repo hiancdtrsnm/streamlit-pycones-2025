@@ -9,11 +9,57 @@
 
 ** Hola mundo
 
-** Gancho inicial o tensión emocional , Promise : No podíamos enseñar HTML, CSS o JavaScript a nuestros compañeros.
+** El problema
+#  Gancho inicial o tensión emocional , Promise : No podíamos enseñar HTML, CSS o JavaScript a nuestros compañeros.
 
-Enseñar una super formula. Cometer problemas.
+Muchas veces seguro an tenido ese momento, donde hemos tenido que automatizar una tarea que requiere que apliquemos unas reglas a algun juego de datos, que ayudemos a visualizar algo o inluso simples iteraciones.
 
-** Diferentes soluciones con sus pros y contras
+Por ejemplo durante muchos años he sido el programdor oficial de mi familia y eso me lleva a realizar un monton de mini aplicaciones para todos. La ultima, es procesar unos excel de mi padre contra un monton de reglas, algunas más faciles como chequeo de formatos y otras que pueden llevar incluso a consultar fuentes externas
+
+DESCRIBIR MEJOR EL ESCENARIO
+
+** ¿Qué tecnologias podemos utilizar?
+
+*** Excel
+Pros:
+Aunque estamos en una conferencia de python excel sigue siendo una herramienta perfectamente valida.
+Está battle tested y todo dios lo conoce
+gran expresividad de las columnsas
+
+Contras:
+- es excel
+- no control de versiones
+- ui restringida
+- el lengauje es bastante restrictivo
+
+*** CLI Script
+Pros:
+- fast iteration
+- Access to full python power
+- Version control available
+
+Cons:
+- Dificult to test and recive feedback
+- Nobody can you use it except for the autored
+
+*** Notebook
+Pros:
+- faster iteration
+- some visual compents
+- Version control
+
+Cons:
+- Limit interaction of the visual components
+- Still only for "expert" to use it
+
+*** Full App
+Pros:
+- Everyone can use it
+- Better specialiced UI being available to use it
+
+Cons:
+- Iteración mucho más lenta
+- Más dificil de mantener, porque usalmente tiene más partes
 
 - Excel
 - Consola
@@ -22,7 +68,13 @@ Enseñar una super formula. Cometer problemas.
 
 ** Revelación: Streamlit.
 
-Logo de Streamlit. Ventajas y promesa de mapas, camara access, chat, formularios, dataframe exploration, interacción con API, login?, CICD.
+*** La combinación de los beneficios
+Y si pudieramos tener un poco, lo mejor de todo incorporando
+- Rapida iteracion
+- UI competente
+- Rapid Iteration
+
+# Logo de Streamlit. Ventajas y promesa de mapas, camara access, chat, formularios, dataframe exploration, interacción con API, login?, CICD.
 
 ** Cómo funciona o cómo usar Streamlit.
 
@@ -42,7 +94,7 @@ Mirar lista de features y hacer un contra ejemplos.
 - Maps + interactivo
 - login?
 - Grado de personalizacion?
-  
+- Streamlit works with polars?
 
 *** Calcular un precio con IVA
 *** Un formulario que guarda la información en una base de datos
