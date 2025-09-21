@@ -1,0 +1,209 @@
+#+TITLE: Streamlit: Del Script al Dashboard en Minutos
+#+AUTHOR: Hian Cañizares y Andros Fenollosa
+#+OPTIONS: toc:nil num:nil
+
+* ¿Quienes somos?
+
+** Hian
+
+🐦 X/Twitter:
+💼 LinkedIn:
+🐙 GitHub:
+
+** Andros
+
+🌐 Website: https://andros.dev
+🦣 Mastodon: @andros@activity.andros.dev
+🦄 Org social: https://andros.dev/static/social.org
+🐙 GitHub: https://github.com/tanrax/
+
+* ¡Hola mundo! 👋
+
+¿Quienes somos y qué hacemos aquí?
+
+* El problema: La brecha técnica 😓
+
+🎯 *Promise*: No podíamos enseñar HTML, CSS o JavaScript a nuestros compañeros
+
+❌ Querían ver resultados, no código
+❌ Notebooks eran demasiado técnicos
+❌ Excel tenía limitaciones
+❌ Hacer una web completa era overkill
+
+* Soluciones existentes (y sus problemas)
+
+** Excel 📊
+✅ Familiar para todos
+❌ Limitado en visualizaciones
+❌ No interactivo en web
+
+** Consola 💻
+✅ Rápido para desarrolladores
+❌ Intimidante para usuarios finales
+
+** Jupyter Notebooks 📓
+✅ Combina código y resultados
+❌ Requiere conocimiento técnico
+❌ No es una "app" real
+
+** Frontend + Backend 🌐
+✅ Totalmente personalizable
+❌ Requiere múltiples tecnologías
+❌ Tiempo de desarrollo elevado
+
+* La revelación: Streamlit ⚡
+
+#+BEGIN_CENTER
+🚀 *Python* → *App Web* → *En minutos*
+#+END_CENTER
+
+** Promesa de Streamlit:
+- 📊 Dashboards interactivos
+- 🗃️ Exploración de datos
+- 📝 Formularios web
+- 🗺️ Mapas interactivos
+- 📷 Acceso a cámara
+- 💬 Interfaces de chat
+- 🔐 Autenticación
+- ⚙️ CI/CD integrado
+
+* ¿Cómo funciona Streamlit?
+
+#+BEGIN_SRC python
+import streamlit as st
+
+st.title("¡Hola PyConES! 👋")
+st.write("Esta es mi primera app")
+
+nombre = st.text_input("¿Cómo te llamas?")
+if nombre:
+    st.write(f"¡Hola {nombre}! 🎉")
+#+END_SRC
+
+➡️ *3 líneas de Python* = *App web funcional*
+
+* Ejemplos en vivo: El poder de Streamlit 💪
+
+Loading...
+
+* Características avanzadas 🚀
+
+** 📊 Visualizaciones
+- Plotly, Matplotlib, Altair
+- Mapas interactivos con Folium
+- Gráficos en tiempo real
+
+** 🎯 Interactividad
+- Widgets reactivos
+- Estados de sesión
+- Callbacks automáticos
+
+** ⚡ Performance
+- Cache de datos y conexiones
+- Hot reload durante desarrollo
+- Optimización automática
+
+* ⚠️ Cuándo NO usar Streamlit
+
+❌ **Personalización extrema de UI**
+- CSS/HTML muy específico
+- Animaciones complejas
+- Diseños únicos
+
+❌ **Apps multi-usuario complejas**
+- Gestión avanzada de usuarios
+- Permisos granulares
+- Arquitecturas complejas
+
+❌ **Aplicaciones móviles nativas**
+- Acceso a hardware específico
+- Performance crítica
+
+✅ **Mejor para**: Prototipos, dashboards, herramientas internas, demos
+
+* Cómo Streamlit cambió nuestra forma de trabajar 🔄
+
+** Antes:
+- ⏱️ Semanas para mostrar resultados
+- 🤝 Barrera entre técnicos y no técnicos
+- 📊 Análisis estáticos en PDF/Excel
+
+** Después:
+- ⚡ Prototipos en horas
+- 🎯 Stakeholders pueden interactuar directamente
+- 📈 Dashboards vivos y actualizados
+- 🔄 Iteración rápida basada en feedback
+
+* Streamlit Cloud: Del código a producción ☁️
+
+** Deployment en un click:
+1. 📤 Push a GitHub
+2. 🔗 Conectar con Streamlit Cloud
+3. 🚀 ¡App online en minutos!
+
+** Características:
+- 🆓 Tier gratuito generoso
+- 🔄 Auto-deploy desde GitHub
+- 📊 Analytics básicos
+- 🔐 Autenticación integrada
+
+* Consejos finales 💡
+
+** Para empezar:
+- 🎯 Comienza con algo simple
+- 📚 Usa la documentación oficial
+- 🧪 Experimenta con widgets
+- 🤝 Comparte temprano y obtén feedback
+
+** Recursos relacionados:
+- 🌐 Streamlit-in-Snowflake
+- 📱 Streamlit on mobile (experimental)
+- 🔌 Custom components ecosystem
+
+* Tu desafío para hoy 🎯
+
+#+BEGIN_CENTER
+*¿Qué problema podrías resolver con Streamlit?*
+
+- 📊 Dashboard de métricas de tu proyecto
+- 🧮 Calculadora específica de tu dominio
+- 📈 Visualizador de datos de tu empresa
+- 🎮 Prototipo de tu próxima idea
+#+END_CENTER
+
+** 👉 Reto: Crea tu primera app en los próximos 30 minutos
+
+* FAQ - Preguntas frecuentes ❓
+
+** ¿Streamlit es solo para data science?
+¡No! Se usa para dashboards, herramientas internas, prototipos...
+
+** ¿Puedo usar CSS personalizado?
+Sí, pero limitado. st.markdown con HTML/CSS funciona.
+
+** ¿Es gratis?
+Streamlit es open source. Streamlit Cloud tiene tier gratuito.
+
+** ¿Escala para muchos usuarios?
+Para uso interno sí. Para apps públicas masivas, considera otras opciones.
+
+* Recursos y comunidad 🌟
+
+📖 **Documentación**: docs.streamlit.io
+🎮 **Gallery**: streamlit.io/gallery
+💬 **Foro**: discuss.streamlit.io
+
+* ¡Gracias! 🙏
+
+** Hian
+
+🐦 X/Twitter:
+💼 LinkedIn:
+🐙 GitHub:
+
+** Andros
+
+🌐 Website: https://andros.dev
+🦣 Mastodon: @andros@activity.andros.dev
+🦄 Org social: https://andros.dev/static/social.org
+🐙 GitHub: https://github.com/tanrax/
