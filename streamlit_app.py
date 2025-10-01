@@ -5,7 +5,7 @@ st.set_page_config(
     page_title="Streamlit",
     page_icon="⚙️",
     layout="wide",
-    initial_sidebar_state="expanded",
+    # initial_sidebar_state="expanded",
 )
 
 # st.markdown(
@@ -24,6 +24,7 @@ pg = st.navigation(
         st.Page("pages/schedule.py", title="PyConES 2025", icon="📅"),
         st.Page("pages/iva_calculator.py", title="Calculadora IVA", icon="💰"),
         st.Page("pages/user_profiles.py", title="Perfiles de Usuario", icon="👥"),
+        st.Page("pages/basic_example.py", title="Ejemplo Básico", icon="🐍"),
     ]
 )
 

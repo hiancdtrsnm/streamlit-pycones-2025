@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>Streamlit: Del Script al Dashboard en Minutos</title>
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@5/dist/reveal.css" />
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@5/dist/theme/white.css" id="theme" />
+    <link rel="stylesheet" href="https://unpkg.com/highlight.js@11.9.0/styles/github.min.css">
+
+    <link href="stlite.html" />
+
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-transform: none !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+                <img src="https://streamlit.io/images/brand/streamlit-mark-color.png" alt="Streamlit Logo"
+                    style="width: 200px; margin-bottom: 20px;">
+                <h1 style="font-family: 'Old English Text MT', 'Blackletter', serif;">Streamlit</h1>
+                <h3>Del Script al Dashboard en Minutos</h3>
+
+                <div style="display: flex; align-items: center; justify-content: center; gap: 30px; margin-top: 30px;">
+                    <div style="text-align: center;">
+                        <img src="https://avatars.githubusercontent.com/u/4553672?v=4" alt="Author 1"
+                            style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;">
+                        <h4 style="margin: 10px 0 5px 0;">Andros</h4>
+                        <p style="margin: 0; color: #666;">@handle1</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="https://avatars.githubusercontent.com/u/7343177?v=4" alt="Author 2"
+                            style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;">
+                        <h4 style="margin: 10px 0 5px 0;">Hian</h4>
+                        <p style="margin: 0; color: #666;">@handle2</p>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section>
+                <h2>¿Quiénes somos?</h2>
+            </section>
+
+            <section>
+                <h2> El Problema</h2>
+                <img src="imgs/problem.png" alt="El Problema" style="width: 600px; border-radius: 20px;">
+                <aside class="notes">
+                    Tipos de problemas que resulve Streamlit:
+                    <ul>
+                        <li>Fast feedback user interfaces</li>
+                </aside>
+            </section>
+
+            <section>
+                <section>
+
+                    <h2>Soluciones Posibles</h2>
+                </section>
+                <section>
+                    <h3>📊 Excel</h3>
+                    <div style="display: flex; align-items: center; gap: 40px;">
+                        <div style="flex: 1;">
+                            <img src="imgs/excel.webp" alt="Excel"
+                                style="width: 100%; max-width: 500px; border-radius: 20px;">
+                        </div>
+                        <div style="flex: 1; text-align: left;">
+                            <h4>✅ Ventajas:</h4>
+                            <ul>
+                                <li>Fácil de usar</li>
+                                <li>Ampliamente conocido</li>
+                                <li>Bueno para análisis básicos</li>
+                            </ul>
+                            <h4>❌ Desventajas:</h4>
+                            <ul>
+                                <li>Limitado para datos grandes</li>
+                                <li>Colaboración limitada</li>
+                                <li>Difícil de mantener</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>💻 Consola</h3>
+                    <div style="display: flex; align-items: center; gap: 40px;">
+                        <div style="flex: 1;">
+                            <img src="imgs/terminal.png" alt="Consola"
+                                style="width: 100%; max-width: 500px; border-radius: 20px;">
+                        </div>
+                        <div style="flex: 1; text-align: left;">
+                            <h4>✅ Ventajas:</h4>
+                            <ul>
+                                <li>Flexible y programático</li>
+                                <li>Componentes visuales personalizables</li>
+                                <li>UI Limitada</li>
+                            </ul>
+                            <h4>❌ Desventajas:</h4>
+                            <ul>
+                                <li>Curva de aprendizaje empinada</li>
+                                <li>Requiere conocimientos técnicos</li>
+                                <li>Menos visual que otras herramientas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>📓 Jupyter Notebooks</h3>
+                    <div style="display: flex; align-items: center; gap: 40px;">
+                        <div style="flex: 1;">
+                            <img src="imgs/notebook.png" alt="Jupyter Notebooks"
+                                style="width: 100%; max-width: 500px; border-radius: 20px;">
+                        </div>
+                        <div style="flex: 1; text-align: left;">
+                            <h4>✅ Ventajas:</h4>
+                            <ul>
+                                <li>Interactividad en tiempo real</li>
+                                <li>Ideal para análisis exploratorios</li>
+                                <li>Soporte para múltiples lenguajes</li>
+                            </ul>
+                            <h4>❌ Desventajas:</h4>
+                            <ul>
+                                <li>Difícil de compartir</li>
+                                <li>Requiere configuración</li>
+                                <li>Menos adecuado para producción</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>🌐 Web Dashboard</h3>
+                    <div style="display: flex; align-items: center; gap: 40px;">
+                        <div style="flex: 1;">
+                            <img src="imgs/webapp.png" alt="Web Dashboard"
+                                style="width: 100%; max-width: 500px; border-radius: 20px;">
+                        </div>
+                        <div style="flex: 1; text-align: left;">
+                            <h4>✅ Ventajas:</h4>
+                            <ul>
+                                <li>Altamente personalizable</li>
+                                <li>Fácil de compartir y colaborar</li>
+                                <li>Escalable para grandes audiencias</li>
+                            </ul>
+                            <h4>❌ Desventajas:</h4>
+                            <ul>
+                                <li>Requiere conocimientos de desarrollo web</li>
+                                <li>Mayor tiempo de configuración</li>
+                                <li>Mantenimiento continuo</li>
+                            </ul>
+                        </div>
+                </section>
+
+            </section>
+
+            <section>
+                <h3>¿Qué necesitamos?</h3>
+                <ul style="text-align: center; list-style-type: disc; margin-left: 20px;"></ul>
+                <li class="fragment">Rápido para desarrolladores</li>
+                <li class="fragment">Componentes visuales personalizables</li>
+                <li class="fragment">Integración con bibliotecas que ya conocemos (Matplotlib, 🐼, ...)</li>
+
+                </ul>
+            </section>
+
+            <section>
+                <h3>Streamlit</h3>
+                <iframe src="http://localhost:8501?embed=true" style="max-width: 900px;" class="stretch"
+                    frameborder="0"></iframe>
+            </section>
+
+            <section>
+                <iframe src="http://localhost:8502?embed=true" style="" class="stretch" frameborder="0"></iframe>
+            </section>
+
+            <section>
+                <h3><a href="http://localhost:8501/" target="_blank">Full example</a></h3>
+                <iframe src="http://localhost:8501/basic_example?embed=true" class="stretch" frameborder="0"></iframe>
+            </section>
+
+            <section>
+
+                <h3>Capacidades</h3>
+                <ul style="text-align: left; list-style-type: disc;">
+                    <li>📊 Dashboards interactivos</li>
+                    <li>🗃️ Exploración de datos</li>
+                    <li>📝 Formularios web</li>
+                    <li>🗺️ Mapas interactivos</li>
+                    <li>📷 Acceso a cámara</li>
+                    <li>💬 Interfaces de chat</li>
+                    <li>🔐 Autenticación</li>
+                    <li>⚙️ CI/CD integrado</li>
+                </ul>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Características avanzadas 🚀</h2>
+                </section>
+                
+                <section>
+                    <h3>📊 Visualizaciones</h3>
+                    <ul></ul>
+                        <li>Plotly, Matplotlib, Altair</li>
+                        <li>Mapas interactivos con Folium</li>
+                        <li>Gráficos en tiempo real</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3>🎯 Interactividad</h3>
+                    <ul>
+                        <li>Widgets reactivos</li>
+                        <li>Estados de sesión</li>
+                        <li>Callbacks automáticos</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3>⚡ Performance</h3>
+                    <ul>
+                        <li>Cache de datos y conexiones</li>
+                        <li>Hot reload durante desarrollo</li>
+                        <li>Optimización automática</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>⚠️ Cuándo NO usar Streamlit</h2>
+                </section>
+                
+                <section>
+                    <h3>❌ Personalización extrema de UI</h3>
+                    <ul>
+                        <li>CSS/HTML muy específico</li>
+                        <li>Animaciones complejas</li>
+                        <li>Diseños únicos</li>
+                    </ul>
+                    <p style="font-size: 0.8em; color: #666; margin-top: 20px;">
+                        <strong>Nota:</strong> Para funcionalidades específicas puedes crear componentes personalizados, 
+                        pero esto requiere conocimientos adicionales de desarrollo web.
+                    </p>
+                </section></p>
+                
+                <section>
+                    <h3>❌ Apps multi-usuario complejas</h3>
+                    <ul>
+                        <li>Gestión avanzada de usuarios</li>
+                        <li>Permisos granulares</li>
+                        <li>Arquitecturas complejas</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3>❌ Aplicaciones móviles nativas</h3>
+                    <ul>
+                        <li>Acceso a hardware específico</li>
+                        <li>Performance crítica</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>✅ Usos Recomendados</h3>
+                    <ul>
+                        <li>Prototipos rápidos</li>
+                        <li>Dashboards interactivos</li>
+                        <li>Herramientas internas</li>
+                        <li>Demos y presentaciones</li>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Cómo Streamlit cambió nuestra forma de trabajar 🔄</h2>
+                </section>
+
+                <section style="display: flex;">
+                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-around;">
+                    <h3>📅 Antes</h3>
+                    <ul style="text-align: center; list-style-type: disc;">
+                        <li>⏱️ Semanas para mostrar resultados</li>
+                        <li>🤝 Barrera entre técnicos y no técnicos</li>
+                        <li>📊 Análisis estáticos en PDF/Excel</li>
+                    </ul>
+                    <img src="imgs/bossangry.png" alt="Jefe Enojado" style="width: 400px; border-radius: 20px;">
+                    </div>
+                </section>
+                
+                <section>
+                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-around;">
+                    <h3>✨ Después</h3>
+                    <ul >
+                        <li>⚡ Prototipos en horas</li>
+                        <li>🎯 Stakeholders pueden interactuar directamente</li>
+                        <li>📈 Dashboards vivos y actualizados</li>
+                        <li>🔄 Iteración rápida basada en feedback</li>
+                    </ul>
+                    <img src="imgs/bosshappy.png" alt="Jefe Feliz" style="width: 400px; border-radius: 20px;">
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Streamlit Cloud: Del código a producción ☁️</h2>
+                </section>
+                
+                <section>
+                    <h3>📤 Deployment en un click</h3>
+                    <ol style="text-align: left; font-size: 1.2em;">
+                        <li>📤 Push a GitHub</li>
+                        <li>🔗 Conectar con Streamlit Cloud</li>
+                        <li>🚀 ¡App online en minutos!</li>
+                    </ol>
+                </section>
+                
+                <section>
+                    <h3>✨ Características</h3>
+                    <ul style="text-align: left; list-style-type: disc;">
+                        <li>🆓 Tier gratuito generoso</li>
+                        <li>🔄 Auto-deploy desde GitHub</li>
+                        <li>📊 Analytics básicos</li>
+                        <li>🔐 Autenticación integrada</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>Tu desafío para hoy 🎯</h2>
+                </section>
+                
+                <section>
+                    <h3>¿Qué problema podrías resolver con Streamlit?</h3>
+                    <ul style="text-align: left; list-style-type: disc;">
+                        <li>📊 Dashboard de métricas de tu proyecto</li>
+                        <li>🧮 Calculadora específica de tu dominio</li>
+                        <li>📈 Visualizador de datos de tu empresa</li>
+                        <li>🎮 Prototipo de tu próxima idea</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3>Crea tu primera app en los próximos 30 minutos</h3>
+                    <div style="background-color: #f0f8ff; border-radius: 10px; padding: 30px; margin: 20px 0;">
+                        <p style="font-size: 1.5em; color: #2c3e50;">
+                            ¡Es tu momento de brillar! 🌟
+                        </p>
+                    </div>
+                </section>
+            </section>
+            <section>
+
+                    <h2>FAQ - Preguntas frecuentes ❓</h2>
+                
+                <section>
+                    <h3>¿Streamlit es solo para data science?</h3>
+                    <p style="font-size: 1.2em; text-align: left;">
+                        ¡No! Se usa para dashboards, herramientas internas, prototipos...
+                    </p>
+                </section>
+                
+                <section>
+                    <h3>¿Puedo usar CSS personalizado?</h3>
+                    <p style="font-size: 1.2em; text-align: left;">
+                        Sí, pero limitado. <code>st.markdown</code> con HTML/CSS funciona además de soporte para formulas.
+                    </p>
+                </section>
+                
+                <section>
+                    <h3>¿Es gratis?</h3>
+                    <p style="font-size: 1.2em; text-align: left;">
+                        Streamlit es open source. Streamlit Cloud tiene tier gratuito.
+                    </p>
+                </section>
+                
+                <section>
+                    <h3>¿Escala para muchos usuarios?</h3>
+                    <p style="font-size: 1.2em; text-align: left;">
+                        Para uso interno sí. Para apps públicas masivas, considera otras opciones.
+                    </p>
+                </section>
+
+            </section>
+
+            
+
+            <section>
+                <h3>Recursos y Comunidad 🌟</h3>
+                <ul >
+                    <li>📖 <a href="https://docs.streamlit.io" target="_blank">Documentación</a></li>
+                    <li>🎮 <a href="https://streamlit.io/gallery" target="_blank">Gallery</a></li>
+                    <li>💬 <a href="https://discuss.streamlit.io" target="_blank">Foro</a></li>
+            </section>
+
+            <section>
+                <h2>¡Gracias! 🙌</h2>
+                <p style="font-size: 1.2em; text-align: center;">
+                    ¡Ahora es tu turno de crear algo increíble con Streamlit!
+                </p>
+                <img src="https://streamlit.io/images/brand/streamlit-mark-color.png" alt="Streamlit Logo"
+                    style="width: 150px; margin-top: 20px;">
+            </section>
+            
+            <!-- <section>
+                <iframe data-src="stlite.html" class="stretch" style="border:0"></iframe>
+            </section> -->
+
+        </div>
+    </div>
+
+    <!-- Reveal.js core JS -->
+    <script src="https://unpkg.com/reveal.js@5/dist/reveal.js"></script>
+    <!-- Plugins: notes, markdown (not used, but handy), highlight -->
+    <script src="https://unpkg.com/reveal.js@5/plugin/notes/notes.js"></script>
+    <script src="https://unpkg.com/reveal.js@5/plugin/highlight/highlight.js"></script>
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-transform: none;
+        }
+    </style>
+    <script>
+        const deck = new Reveal({
+            hash: true,
+            slideNumber: true,
+            plugins: [RevealNotes, RevealHighlight],
+            transition: 'slide',
+            width: 1280,
+            height: 720,
+            margin: 0.06,
+        });
+        deck.initialize();
+    </script>
+</body>
+
+</html>
