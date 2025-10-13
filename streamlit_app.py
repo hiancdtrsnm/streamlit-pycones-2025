@@ -25,6 +25,8 @@ pg = st.navigation(
         st.Page("pages/iva_calculator.py", title="Calculadora IVA", icon="💰"),
         st.Page("pages/user_profiles.py", title="Perfiles de Usuario", icon="👥"),
         st.Page("pages/basic_example.py", title="Ejemplo Básico", icon="🐍"),
+        st.Page("pages/forms_demo.py", title="Forms Demo", icon="📝"),
+        st.Page("pages/video_camera.py", title="Efectos Webcam", icon="🎥"),
     ]
 )
 
