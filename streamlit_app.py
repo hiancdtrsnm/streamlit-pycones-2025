@@ -27,6 +27,7 @@ pg = st.navigation(
         st.Page("pages/basic_example.py", title="Ejemplo Básico", icon="🐍"),
         st.Page("pages/forms_demo.py", title="Forms Demo", icon="📝"),
         st.Page("pages/video_camera.py", title="Efectos Webcam", icon="🎥"),
+        st.Page("pages/chat_interface.py", title="Chat con IA", icon="🤖"),
     ]
 )
 
