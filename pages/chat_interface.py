@@ -18,7 +18,7 @@ def fetch_schedule()->dict:
         return None
 
 
-# Page configuration
+
 st.set_page_config(
     page_title="Chat con IA - PyConES 2025",
     page_icon="🤖",
@@ -26,9 +26,8 @@ st.set_page_config(
 )
 
 st.title("🤖 Chat con IA - PyConES 2025")
-st.markdown("Asistente de IA powered by OpenAI para PyConES 2025")
 
-# Sidebar for OpenAI configuration
+
 with st.sidebar:
     st.header("⚙️ Configuración")
     

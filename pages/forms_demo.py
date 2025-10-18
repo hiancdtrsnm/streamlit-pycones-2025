@@ -3,12 +3,7 @@ import time
 import pandas as pd
 from datetime import datetime
 
-st.title("📝 Streamlit Forms Demo")
-
-st.markdown("""
-This demo showcases **Streamlit Forms**: their advantages, limitations, and best practices.
-Forms batch user input to prevent constant re-runs, making your apps more efficient.
-""")
+st.title("📝 Forms Demo")
 
 # Initialize session state
 if 'form_submissions' not in st.session_state:
